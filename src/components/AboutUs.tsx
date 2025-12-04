@@ -112,7 +112,6 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Team Carousel */}
         <div className="max-w-6xl mx-auto mb-20">
           <Swiper
             modules={[Pagination, Autoplay, EffectCoverflow]}
@@ -186,8 +185,7 @@ export default function AboutUs() {
           </Swiper>
         </div>
 
-        {/* Values Section */}
-        <div className="max-w-6xl mx-auto mb-20">
+        <div className="max-w-6xl mx-auto">
           <h4 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Our Core Values
           </h4>

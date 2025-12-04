@@ -63,7 +63,7 @@ export default function Testimonials() {
             What Our Clients Say
           </h3>
           <p className="text-xl text-gray-600">
-            Don{"'"}t just take our word for it – hear from those who've
+            Don&apos;t just take our word for it – hear from those who&apos;ve
             experienced the difference.
           </p>
         </div>

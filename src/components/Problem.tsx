@@ -7,6 +7,7 @@ import {
   faChartLine,
   faGauge,
   faArrowRight,
+  faShieldHalved,
 } from "@fortawesome/free-solid-svg-icons";
 
 const problems = [
@@ -32,6 +33,14 @@ const problems = [
     description: "Monolithic architectures that break when traffic spikes.",
     impact: "Limited growth potential",
   },
+  {
+    id: 4,
+    icon: faShieldHalved,
+    title: "Security vulnerabilities",
+    description:
+      "Outdated dependencies, exposed APIs, and weak configurations put your product at risk.",
+    impact: "High breach probability",
+  },
 ];
 
 export default function Problem() {
@@ -53,47 +62,42 @@ export default function Problem() {
             performance.
           </p>
         </div>
+        <div className="grid lg:grid-cols-2 gap-5 mb-16">
+          {problems.map((problem) => (
+            <div
+              key={problem.id}
+              className="group p-6 bg-linear-to-br from-white to-gray-50 border-2 border-gray-100 rounded-2xl hover:border-red-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="flex items-start gap-4">
+                <div className="shrink-0 w-14 h-14 bg-linear-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <FontAwesomeIcon
+                    icon={problem.icon}
+                    className="text-white text-xl"
+                  />
+                </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="space-y-6">
-            {problems.map((problem) => (
-              <div
-                key={problem.id}
-                className="group p-6 bg-gradient-to-br from-white to-gray-50 border-2 border-gray-100 rounded-2xl hover:border-red-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                    <FontAwesomeIcon
-                      icon={problem.icon}
-                      className="text-white text-xl"
-                    />
+                <div className="flex-1">
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="font-bold text-xl text-gray-900 group-hover:text-red-600 transition-colors">
+                      {problem.title}
+                    </h3>
+                    <span className="shrink-0 w-8 h-8 bg-red-100 text-red-600 rounded-full flex items-center justify-center font-bold text-sm">
+                      {problem.id}
+                    </span>
                   </div>
 
-                  <div className="flex-1">
-                    <div className="flex items-start justify-between mb-2">
-                      <h3 className="font-bold text-xl text-gray-900 group-hover:text-red-600 transition-colors">
-                        {problem.title}
-                      </h3>
-                      <span className="shrink-0 w-8 h-8 bg-red-100 text-red-600 rounded-full flex items-center justify-center font-bold text-sm">
-                        {problem.id}
-                      </span>
-                    </div>
-
-                    <p className="text-gray-600 mb-3">{problem.description}</p>
-                  </div>
+                  <p className="text-gray-600 mb-3">{problem.description}</p>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-
         <div className="text-center mt-16">
           <a
             href="#contact"
             className="inline-block px-8 py-4 bg-brand-60 text-white rounded-full font-semibold hover:bg-brand-60 transition-all hover:scale-105 shadow-lg"
           >
-            Solve your problems now {""}
-            <FontAwesomeIcon icon={faArrowRight} />
+            Solve your problems now <FontAwesomeIcon icon={faArrowRight} />
           </a>
         </div>
       </div>

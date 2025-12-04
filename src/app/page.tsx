@@ -6,7 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import AboutUs from "@/components/AboutUs";
 import FAQ from "@/components/Faq";
 import CTA from "@/components/CTA";
-import Footer from "@/components/Fooster";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {

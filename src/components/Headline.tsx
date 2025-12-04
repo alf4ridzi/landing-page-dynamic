@@ -51,15 +51,15 @@ export default function Headline() {
 
         <div className="flex-1 hidden lg:flex justify-center">
           <div className="relative">
-            <div className="w-[420px] h-[320px] rounded-3xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl p-8 border border-white/20 shadow-2xl transform hover:scale-105 transition-transform duration-500">
+            <div className="w-[420px] h-80 rounded-3xl bg-linear-to-br from-white/10 to-white/5 backdrop-blur-xl p-8 border border-white/20 shadow-2xl transform hover:scale-105 transition-transform duration-500">
               <div className="h-full flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="h-4 w-32 bg-gradient-to-r from-yellow-300 to-orange-400 rounded-full animate-pulse" />
+                  <div className="h-4 w-32 bg-linear-to-r from-yellow-300 to-orange-400 rounded-full animate-pulse" />
                   <div className="h-8 w-64 bg-white/30 rounded-lg" />
                   <div className="h-6 w-48 bg-white/20 rounded-lg" />
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl shadow-lg" />
+                  <div className="w-20 h-20 bg-linear-to-br from-blue-400 to-purple-500 rounded-xl shadow-lg" />
                   <div className="flex-1 space-y-2">
                     <div className="h-4 w-full bg-white/15 rounded" />
                     <div className="h-4 w-3/4 bg-white/10 rounded" />

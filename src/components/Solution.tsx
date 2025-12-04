@@ -4,9 +4,6 @@ import {
   faCode,
   faDatabase,
   faShoppingCart,
-  faRocket,
-  faBolt,
-  faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 const services = [
@@ -65,12 +62,12 @@ export default function Solution() {
               className="group p-8 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden"
             >
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${s.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
+                className={`absolute inset-0 bg-linear-to-br ${s.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
               ></div>
 
               <div className="relative z-10">
                 <div
-                  className={`w-16 h-16 bg-gradient-to-br ${s.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                  className={`w-16 h-16 bg-linear-to-br ${s.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                 >
                   <FontAwesomeIcon
                     icon={s.icon}
