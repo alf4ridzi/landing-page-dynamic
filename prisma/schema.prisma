@@ -47,6 +47,7 @@ model testimonials {
 
 model teams {
   id Int @unique @default(autoincrement())
+  name String
   role String
   image String
   expertise String
