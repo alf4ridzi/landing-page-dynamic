@@ -11,7 +11,7 @@ const projects = [
     id: 1,
     title: "E-commerce Platform",
     tag: "e-commerce",
-    img: "/assets/images/portfolio/ecommerce.png",
+    image: "/assets/images/portfolio/ecommerce.png",
     description: "Modern storefront with 50% faster checkout",
     metrics: "+120% conversion",
   },
@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "SaaS Dashboard",
     tag: "landing",
-    img: "/assets/images/portfolio/sass.png",
+    image: "/assets/images/portfolio/sass.png",
     description: "Real-time analytics platform for B2B",
     metrics: "10k+ daily users",
   },
@@ -27,7 +27,7 @@ const projects = [
     id: 3,
     title: "Marketing Website",
     tag: "e-commerce",
-    img: "/assets/images/portfolio/marketing.webp",
+    image: "/assets/images/portfolio/marketing.webp",
     description: "High-converting landing pages",
     metrics: "+85% lead gen",
   },
@@ -35,7 +35,7 @@ const projects = [
     id: 4,
     title: "Corporate Portal",
     tag: "landing",
-    img: "/assets/images/portfolio/corporate.png",
+    image: "/assets/images/portfolio/corporate.png",
     description: "Enterprise intranet solution",
     metrics: "500+ employees",
   },
@@ -43,7 +43,7 @@ const projects = [
     id: 5,
     title: "Mobile App",
     tag: "e-commerce",
-    img: "/assets/images/portfolio/cross-platform.png",
+    image: "/assets/images/portfolio/cross-platform.png",
     description: "Cross-platform booking system",
     metrics: "4.8★ rating",
   },
@@ -51,7 +51,7 @@ const projects = [
     id: 6,
     title: "Blog Platform",
     tag: "landing",
-    img: "/assets/images/portfolio/blog-platform.webp",
+    image: "/assets/images/portfolio/blog-platform.webp",
     description: "Headless CMS with rich content",
     metrics: "1M+ views/mo",
   },
@@ -86,7 +86,7 @@ export default function Portfolio() {
                 <Image
                   width={150}
                   height={150}
-                  src={p.img}
+                  src={p.image}
                   alt={p.title}
                   className="object-cover h-full w-full group-hover:scale-110 transition-transform duration-500"
                 />
