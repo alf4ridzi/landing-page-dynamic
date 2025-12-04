@@ -12,3 +12,58 @@ generator client {
 datasource db {
   provider = "mysql"
 }
+
+model Hero {
+  id Int @unique @default(autoincrement())
+  title String
+  tagline String
+}
+
+model Problems {
+  id Int @unique @default(autoincrement())
+  title String
+  description String
+  impact String
+  icon String
+}
+
+model Portfolios {
+  id Int @unique @default(autoincrement())
+  title String
+  tag String
+  image String
+  description String
+  metrics String
+}
+
+model Testimonials {
+  id Int @unique @default(autoincrement())
+  name String
+  role String
+  quote String
+  rating Int
+  company String
+}
+
+model Teams {
+  id Int @unique @default(autoincrement())
+  role String
+  image String
+  expertise String
+  color String
+}
+
+model Questions {
+  id Int @unique @default(autoincrement())
+  question String
+  answer String
+}
+
+model Website {
+  id Int @unique @default(autoincrement())
+  email String
+  phone BigInt
+}
+
+
+

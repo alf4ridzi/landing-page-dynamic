@@ -9,7 +9,6 @@ const items = [
     role: "CEO, Acme Tech",
     quote:
       "Working with this team transformed our online presence. The website loads incredibly fast and our conversion rate increased by 40%. Great result, fast delivery.",
-    avatar: "/assets/person1.jpg",
     rating: 5,
     company: "Acme",
   },
@@ -19,7 +18,6 @@ const items = [
     role: "CTO, Beta Solutions",
     quote:
       "The technical expertise is outstanding. Our site performance improved 3x and the code quality is exceptional. Best development partner we've worked with.",
-    avatar: "/assets/person2.jpg",
     rating: 5,
     company: "Beta",
   },
@@ -29,7 +27,6 @@ const items = [
     role: "Founder, StartupX",
     quote:
       "From concept to launch in just 4 weeks! The attention to detail and modern design exceeded our expectations. Highly recommend for any serious project.",
-    avatar: "/assets/person1.jpg",
     rating: 5,
     company: "StartupX",
   },
@@ -39,7 +36,6 @@ const items = [
     role: "Marketing Director, Commerce Co",
     quote:
       "Our e-commerce platform now runs smoothly with zero downtime. Customer satisfaction has increased significantly since the redesign.",
-    avatar: "/assets/person2.jpg",
     rating: 5,
     company: "Commerce Co",
   },
