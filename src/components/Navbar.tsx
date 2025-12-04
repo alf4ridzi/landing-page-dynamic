@@ -27,20 +27,19 @@ export default function Navbar() {
   ];
 
   return (
-    <header 
+    <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? "bg-white/95 backdrop-blur-lg shadow-lg" 
+        scrolled
+          ? "bg-white/95 backdrop-blur-lg shadow-lg"
           : "bg-white/80 backdrop-blur-sm"
       } border-b border-gray-100`}
     >
       <nav className="container mx-auto px-6 md:px-12 flex items-center justify-between h-20">
-
         <Link
           href="/"
-          className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-brand-60 to-brand-30 bg-clip-text text-transparent tracking-tight hover:scale-105 transition-transform text-brand-60 bg-brand-60"
+          className="text-2xl md:text-3xl font-bold bg-linear-to-r from-brand-60 to-brand-30 bg-clip-text text-transparent tracking-tight hover:scale-105 transition-transform text-brand-60 bg-brand-60"
         >
-          DevBrand
+          ArkaKode
         </Link>
 
         <ul className="hidden md:flex gap-1 bg-gray-50 rounded-full px-2 py-2">
@@ -56,14 +55,12 @@ export default function Navbar() {
           ))}
         </ul>
 
- 
         <a
           href="#contact"
-          className="hidden md:block px-6 py-3 rounded-full bg-gradient-to-r from-brand-60 to-brand-30  text-white bg-brand-60 hover:shadow-xl hover:scale-105 transition-all font-semibold"
+          className="hidden md:block px-6 py-3 rounded-full bg-linear-to-r from-brand-60 to-brand-30  text-white bg-brand-60 hover:shadow-xl hover:scale-105 transition-all font-semibold"
         >
           Start Project
         </a>
-
 
         <button
           onClick={() => setOpen(!open)}
@@ -72,7 +69,6 @@ export default function Navbar() {
           <FontAwesomeIcon icon={open ? faTimes : faBars} />
         </button>
       </nav>
-
 
       {open && (
         <div className="md:hidden bg-white border-t shadow-xl animate-fadeIn">
@@ -92,7 +88,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-4 block text-center py-3 rounded-xl bg-gradient-to-r from-brand-60 to-brand-30 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
+              className="mt-4 block text-center py-3 rounded-xl bg-linear-to-r from-brand-60 to-brand-30 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               Start Project
             </a>
