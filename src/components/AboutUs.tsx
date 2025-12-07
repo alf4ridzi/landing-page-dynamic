@@ -14,37 +14,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-const team = [
-  {
-    name: "Muhammad Alfaridzi",
-    role: "Founder & CEO",
-    img: "/assets/images/chee.jpeg",
-    expertise: "Strategy & Vision",
-    color: "from-blue-500 to-cyan-500",
-  },
-  {
-    name: "Dina Putri",
-    role: "Lead Engineer",
-    img: "/assets/images/reze.jpeg",
-    expertise: "Backend & DevOps",
-    color: "from-purple-500 to-pink-500",
-  },
-  {
-    name: "Rama Santoso",
-    role: "UI/UX Designer",
-    img: "/assets/images/jfk.jpeg",
-    expertise: "User Experience",
-    color: "from-orange-500 to-red-500",
-  },
-  {
-    name: "Sari Lestari",
-    role: "Frontend Developer",
-    img: "/assets/images/maomao.jpeg",
-    expertise: "React & Next.js",
-    color: "from-green-500 to-emerald-500",
-  },
-];
-
 const values = [
   {
     icon: faRocket,
@@ -66,7 +35,7 @@ const values = [
   },
 ];
 
-export default function AboutUs() {
+export default function AboutUs({ team }) {
   return (
     <section
       id="about"
@@ -157,7 +126,7 @@ export default function AboutUs() {
                       <Image
                         width={120}
                         height={120}
-                        src={person.img}
+                        src={person.image}
                         className="relative mx-auto w-28 h-28 rounded-full object-cover border-4 border-white shadow-xl group-hover:scale-110 transition-transform duration-500"
                         alt={person.name}
                       />

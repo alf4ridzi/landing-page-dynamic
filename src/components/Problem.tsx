@@ -2,48 +2,9 @@
 
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBolt,
-  faChartLine,
-  faGauge,
-  faArrowRight,
-  faShieldHalved,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faX } from "@fortawesome/free-solid-svg-icons";
 
-const problems = [
-  {
-    id: 1,
-    icon: faGauge,
-    title: "Legacy CMS migrations",
-    description:
-      "Stuck with outdated WordPress or Drupal? We migrate to modern headless solutions.",
-    impact: "50% slower load times",
-  },
-  {
-    id: 2,
-    icon: faBolt,
-    title: "Slow page loads & poor lighthouse scores",
-    description: "Poor performance kills conversions and SEO rankings.",
-    impact: "40% bounce rate increase",
-  },
-  {
-    id: 3,
-    icon: faChartLine,
-    title: "Hard-to-scale frontends",
-    description: "Monolithic architectures that break when traffic spikes.",
-    impact: "Limited growth potential",
-  },
-  {
-    id: 4,
-    icon: faShieldHalved,
-    title: "Security vulnerabilities",
-    description:
-      "Outdated dependencies, exposed APIs, and weak configurations put your product at risk.",
-    impact: "High breach probability",
-  },
-];
-
-export default function Problem() {
+export default function Problem({ problems }) {
   return (
     <section id="problem" className="py-20 bg-white relative overflow-hidden">
       <div className="absolute top-20 right-0 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-50"></div>
@@ -70,10 +31,7 @@ export default function Problem() {
             >
               <div className="flex items-start gap-4">
                 <div className="shrink-0 w-14 h-14 bg-linear-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                  <FontAwesomeIcon
-                    icon={problem.icon}
-                    className="text-white text-xl"
-                  />
+                  <FontAwesomeIcon icon={faX} className="text-white text-xl" />
                 </div>
 
                 <div className="flex-1">

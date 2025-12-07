@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faRocket } from "@fortawesome/free-solid-svg-icons";
 
-export default function Headline() {
+export default function Headline({ hero }) {
   return (
     <header className="relative w-full min-h-[80vh] flex items-center bg-linear-to-br from-brand-60 via-blue-700 to-brand-30 text-white overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -22,8 +24,7 @@ export default function Headline() {
           </h1>
 
           <p className="text-xl text-blue-100 max-w-2xl leading-relaxed">
-            Development & custom solutions for startups and enterprises.
-            Next.js, Headless CMS, e-commerce, and performance-first builds.
+            {hero.tagline}
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
